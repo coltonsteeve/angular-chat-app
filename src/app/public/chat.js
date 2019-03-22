@@ -59,6 +59,11 @@ function submitfunction() {
       message = '<b>' + message + '</b>';
       socket.emit('chatMessage', from, message); 
     }
+    else if (message.indexOf("/big") == 0) {
+      message = message.substring(4,message.length);
+      message = '<h1>' + message + '</h1>';
+      socket.emit('chatMessage', from, message);
+    }
     else {
       socket.emit('chatMessage', from, message);
     }
