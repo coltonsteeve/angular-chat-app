@@ -20,7 +20,7 @@ form input {
   border: 0;
   padding: 10px;
   margin-right: .5%;
-  margin-left: 2.5%;
+  margin-left: 0%;
   width: 85%;
 }
 
@@ -29,7 +29,7 @@ form #button {
   background: #4F94CD;
   border: none;
   padding: 10px;
-  width: 9%;
+  width: 8%;
 }
 
 #messages {
@@ -72,8 +72,8 @@ form #button {
 }
 
 label {
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
 }
 
 /*.inputfile:focus + label,
