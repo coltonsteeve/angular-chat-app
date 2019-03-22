@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.8em Helvetica, Arial;
+}
+
+form {
+  /*background: #000;*/
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  margin-right: .5%;
+  margin-left: 2.5%;
+  width: 85%;
+}
+
+form #button {
+  color: #FFF;
+  background: #4F94CD;
+  border: none;
+  padding: 10px;
+  width: 9%;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7%;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+#notifyUser {
+  position: fixed;
+  bottom: 42px;
+  width: 100%;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 0.5em;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer; /* "hand" cursor */
+}
+
+label {
+  width: 10%;
+  height: 10%;
+}
+
+/*.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+}*/
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+	pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    height: 8%;
+  }
+  
+  form input {
+    height: 100%;
+    width: 85%;
+  }
+
+  form #button {
+    width: 14%;
+  }
+
+  #messages li {
+    font-size: 1em;
+  }
+
+}
+/* Reference: http://javabeginnerstutorial.com/javascript-2/create-simple-chat-application-using-node-js-express-js-socket-io/ */

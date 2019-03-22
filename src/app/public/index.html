@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <title>Chat</title>
+  <link rel='stylesheet' href='public/chat.css' />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="public/chat.js"></script>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+
+  <ul id="messages"></ul>
+
+  <div id="notifyUser"></div>
+  <section id="chatsection">
+  <form id="chatform" onsubmit="return(false)">
+    <input type="hidden" id="user" value="" />
+    <input type="file" name="file" id="file" class="inputfile" />
+    <label for="file"><img src="https://camo.githubusercontent.com/f8ea5eab7494f955e90f60abc1d13f2ce2c2e540/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323037383234352f3235393331332f35653833313336322d386362612d313165322d383435332d6536626439353663383961342e706e67" height="50%" width="50%"></label>
+    <input id="m" autocomplete="off" placeholder="Type your message here.." /><input
+      type="submit" id="button" value="Send" />
+  </form>
+</section>
+</body>
+
+</html>
+<!-- Reference: http://javabeginnerstutorial.com/javascript-2/create-simple-chat-application-using-node-js-express-js-socket-io/ -->
